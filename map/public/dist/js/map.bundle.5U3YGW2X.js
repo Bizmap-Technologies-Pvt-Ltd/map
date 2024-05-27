@@ -1,4 +1,6 @@
-(()=>{frappe.templates.map_html=`
+(() => {
+  // frappe-html:/home/frappe/frappe-bench/apps/map/map/public/js/map_html.html
+  frappe.templates["map_html"] = `
 
 <html>
   <head>
@@ -53,24 +55,25 @@
 
     <script>
 
-      const apiKey = "AAPKb7a1d63200d747528ece8e0746d9a46dVWnWo2g8x_d1tQYqKI7QftZhrtPIwaAM2-stsoAAfcmimmd9BHcyMHDTGAJwz1d4";
+      var apiKey = "AAPKb7a1d63200d747528ece8e0746d9a46dVWnWo2g8x_d1tQYqKI7QftZhrtPIwaAM2-stsoAAfcmimmd9BHcyMHDTGAJwz1d4";
 
-      const basemapEnum = "arcgis/navigation";
+      var basemapEnum = "ArcGIS:Navigation";
 
       var map = L.map("map", {
         minZoom: 2
       });
 
-      map.setView([22.5411072, 72.9546752], 12); 
+      map.setView([{{ latitude }}, {{ longitude }}], 12); 
       L.esri.Vector.vectorBasemapLayer(basemapEnum, {
         apiKey: apiKey
       }).addTo(map);
-      const startLayerGroup = L.layerGroup().addTo(map);
+      var startLayerGroup = L.layerGroup().addTo(map);
 
-      L.marker({lat: 22.529365415227538, lng: 72.96947479248048}, ).addTo(startLayerGroup)
+      L.marker({lat: {{ latitude }}, lng: {{ longitude }} }, ).addTo(startLayerGroup)
       
     
     <\/script>
   </body>
-</html>`;})();
-//# sourceMappingURL=map.bundle.QZTAV76X.js.map
+</html>`;
+})();
+//# sourceMappingURL=map.bundle.5U3YGW2X.js.map

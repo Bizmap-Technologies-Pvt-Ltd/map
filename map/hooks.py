@@ -14,6 +14,9 @@ app_license = "mit"
 # app_include_js = "/assets/map/js/map.js"
 app_include_js = [
 	"map.bundle.js",
+    "/assets/map/js/leaflet.js",
+    "/assets/map/js/esri-leaflet.js",
+    "/assets/map/js/esri-leaflet-vector.js"
 ]
 # include js, css files in header of web template
 # web_include_css = "/assets/map/css/map.css"
