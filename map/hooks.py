@@ -14,6 +14,7 @@ app_license = "mit"
 # app_include_js = "/assets/map/js/map.js"
 app_include_js = [
 	"map.bundle.js",
+    "map1.bundle.js",
     "/assets/map/js/leaflet.js",
     "/assets/map/js/esri-leaflet.js",
     "/assets/map/js/esri-leaflet-vector.js"
@@ -34,7 +35,10 @@ app_include_js = [
 
 # include js in doctype views
 doctype_js = {
-    "Issue" : "public/js/issue.js"}
+    "SR" : "public/js/sr.js",
+    "Service Request" : "public/js/service_request.js",
+    "Issue" : "public/js/issue.js",
+    }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}

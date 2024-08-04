@@ -1,4 +1,6 @@
-
+(() => {
+  // frappe-html:/home/frappe/frappe-bench/apps/map/map/public/js/map1_html.html
+  frappe.templates["map1_html"] = `
 
 <html>
   <head>
@@ -6,11 +8,11 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""><\/script>
 
     
-    <script src="https://unpkg.com/esri-leaflet@3.0.12/dist/esri-leaflet.js"></script>
-    <script src="https://unpkg.com/esri-leaflet-vector@4.2.3/dist/esri-leaflet-vector.js"></script>
+    <script src="https://unpkg.com/esri-leaflet@3.0.12/dist/esri-leaflet.js"><\/script>
+    <script src="https://unpkg.com/esri-leaflet-vector@4.2.3/dist/esri-leaflet-vector.js"><\/script>
 
     
 
@@ -70,6 +72,8 @@
       L.marker({lat: {{ latitude }}, lng: {{ longitude }} }, ).addTo(startLayerGroup)
       
     
-    </script>
+    <\/script>
   </body>
-</html>
+</html>`;
+})();
+//# sourceMappingURL=map1.bundle.L4B5GCFW.js.map

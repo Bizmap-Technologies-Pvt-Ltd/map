@@ -13,7 +13,7 @@ frappe.ui.form.on('Issue', {
     },
 	set_map(frm){
 		if (frm.doc.custom_latitude && frm.doc.custom_longitude)
-			{ frm.fields_dict.custom_map.html(
+			{ frm.fields_dict.custom_map.$wrapper.html(
 				 frappe.render_template('map_html',{ 
 					 latitude:frm.doc.custom_latitude,
 					 longitude:frm.doc.custom_longitude

@@ -23,7 +23,7 @@
         padding: 0;
       }
       #map {
-        position: absolute;
+        position: relative;
         top: 0;
         bottom: 0;
         right: 0;
@@ -51,7 +51,7 @@
   </head>
 
   <body>
-    <div id="map" style = "width:900px; height:580px"></div>
+    <div id="map" style = "width:100%; height:318px"></div>
 
     <script>
 
@@ -76,4 +76,4 @@
   </body>
 </html>`;
 })();
-//# sourceMappingURL=map.bundle.5U3YGW2X.js.map
+//# sourceMappingURL=map.bundle.D345HXOF.js.map
